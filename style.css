@@ -4,9 +4,10 @@
 }
 
 body {
-    background-color: rgb(10, 10, 139);
+    background-color: yellow;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .main {
@@ -38,7 +39,10 @@ body {
 .s4 {
     background-color: yellow;
     border-radius: 10px;
+    animation: color 1s infinite ease;
+    animation-direction: alternate;
 }
+
 
 .n1 {
     height: 200px;
@@ -92,18 +96,32 @@ body {
 
 .s1 {
     height: 100px;
-    width: var(--thin);
-    transform: translateY(-80px) rotate(35deg) translateX(50px);
+    width: var(--wide);
+    transform: translateY(-70px) rotate(35deg) translateX(30px);
 }
 
 .s2 {
     height: 80px;
-    width: var(--thin);
-    transform: translateY(35px) rotate(-50deg) translateX(30px);
+    width: var(--wide);
+    transform: translateY(20px) rotate(-50deg) translateX(10px);
 }
 
 .s3 {
     height: 100px;
-    width: var(--thin);
-    transform: translateY(55px) rotate(35deg) translateX(-5px);
+    width: var(--wide);
+    transform: translateY(65px) rotate(35deg) translateX(-20px);
+}
+
+@keyframes color{
+    0%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: green;
+    }
+
+    100%{
+        background-color: blue;
+    }
 }
