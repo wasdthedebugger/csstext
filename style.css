@@ -7,7 +7,6 @@ body {
     background-color: yellow;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .main {
@@ -42,7 +41,6 @@ body {
     animation: color 1s infinite ease;
     animation-direction: alternate;
 }
-
 
 .n1 {
     height: 200px;
@@ -96,20 +94,20 @@ body {
 
 .s1 {
     height: 100px;
-    width: var(--wide);
-    transform: translateY(-70px) rotate(35deg) translateX(30px);
+    width: var(--thin);
+    transform: translateY(-80px) rotate(35deg) translateX(50px);
 }
 
 .s2 {
     height: 80px;
-    width: var(--wide);
-    transform: translateY(20px) rotate(-50deg) translateX(10px);
+    width: var(--thin);
+    transform: translateY(35px) rotate(-50deg) translateX(30px);
 }
 
 .s3 {
     height: 100px;
-    width: var(--wide);
-    transform: translateY(65px) rotate(35deg) translateX(-20px);
+    width: var(--thin);
+    transform: translateY(55px) rotate(35deg) translateX(-5px);
 }
 
 @keyframes color{
